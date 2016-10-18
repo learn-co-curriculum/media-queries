@@ -4,7 +4,7 @@
 
 In this lesson we will look at using CSS3 Media Queries to detect viewport sizes and adjust CSS styles accordingly.
 
-## Objectives
+## Topics
 
 1. The purpose of media queries.
 2. Media Query syntax.
