@@ -64,7 +64,7 @@ Here on line 2 we set the default color of paragraphs to red text again. In our 
 
 So, max-width sets a breakpoint that triggers as a screen gets smaller than  the specified size and min-width will trigger when a screen raises above a certain size.
 
-As mentioned prior, we can use the `and` keyword to chain mutliple condition expressions together. Let's look at that example,
+As mentioned prior, we can use the `and` keyword to chain multiple condition expressions together. Let's look at that example,
 
 ```css
 /* initial style */
