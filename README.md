@@ -82,7 +82,7 @@ One nice thing about media queries is that they automatically inherit all of the
 
 ### At What Size Should I Create Break Points?
 
-Let your content determine where break points should fall. Use Developer Tools and Emulators to discover where your content starts to break down. Then create an appropriate break point (media query at that width) to solve the issue. This will ensure that your content looks good on any and all devices not just the popular ones.
+Let your content determine where break points should fall. Use Developer Tools and Emulators to discover where your content starts to break down. Then create an appropriate break point (media query at that width) to solve the issue. This will ensure that your content looks good on any and all devices, not just the popular ones.
 
 ## Summary
 
