@@ -1,18 +1,18 @@
 # CSS Media Queries
 
-## Problem Statement
+## Learning Objectives
+
+- Identify the purpose of media queries.
+- Use media query syntax.
+- Identify how to place "breakpoints".
+
+## Introduction
 
 The key to designing and building responsive layouts is having your content
 respond to the size of the device (or "medium"). Your CSS can query the "media"
 (plural of "medium") to find out their sizes and proportions. These "media
 queries" are the focus of this lesson. By writing "media queries" you can can
 ensure your site looks great on all devices.
-
-## Objectives
-
-1. What is the purpose of media queries
-2. What is the media query syntax
-3. Where should "breakpoints" be created
 
 ## What is the Purpose of Media Queries?
 
@@ -34,6 +34,7 @@ our CSS code:
   }
 }
 ```
+
 Below are more specific and complete examples of the media query syntax:
 
 ```css
@@ -42,7 +43,6 @@ Below are more specific and complete examples of the media query syntax:
     background-color: blue;
   }
 }
-
 ```
 
 ```css
@@ -86,7 +86,7 @@ you want a CSS rule to apply to all devices, but _not_ screens smaller than
 
 Currently, the only well-supported media types are: screen, print, or all
 (meaning all devices). Mobile, tablet, and desktop devices all fall within the
-_screen_ mediatype, while _print_ is used for displaying content in a 'print
+_screen_ `mediatype`, while _print_ is used for displaying content in a 'print
 preview' mode. Most commonly we are concerned only with _screen_.
 
 ```css
@@ -101,9 +101,9 @@ preview' mode. Most commonly we are concerned only with _screen_.
 
 We can use `and` and `,` to separate or combine conditions.
 
-* Using `and` requires that both conditions on each side of the `and` are true
+- Using `and` requires that both conditions on each side of the `and` are true
   in order for the query to apply.
-* Using `,` stands for _or_, meaning that only one of the conditions on either
+- Using `,` stands for _or_, meaning that only one of the conditions on either
   side of the comma has to be true for the query to trigger.
 
 ```css
@@ -114,7 +114,6 @@ We can use `and` and `,` to separate or combine conditions.
 }
 ```
 
-
 ```css
 @media screen and (min-width: 992px), (max-width: 1136px) {
   body {
@@ -122,6 +121,7 @@ We can use `and` and `,` to separate or combine conditions.
   }
 }
 ```
+
 #### (expression)
 
 We define conditional expressions by writing the test and wrapping it in
@@ -222,10 +222,11 @@ desktop screen sizes, along with tablet screen sizes in between.
 
 ## Where Should Break Points Be Created?
 
-Let your content determine where break points should fall. Use [Developer Tools and Emulators][dte] to discover where your content starts to break down. Then create
-an appropriate break point (media query at that width) to solve the issue. This
-will ensure that your content looks good on any and all devices not just the
-popular ones.
+Let your content determine where break points should fall. Use [Developer Tools
+and Emulators][dte] to discover where your content starts to break down. Then
+create an appropriate break point (media query at that width) to solve the
+issue. This will ensure that your content looks good on any and all devices not
+just the popular ones.
 
 Advanced layout techniques, such as grid (which will be covered in later
 lessons), allow us to keep media query break points to a minimum. You can, for
@@ -252,4 +253,3 @@ queries as you need them at whatever size your content starts to become unsightl
 - [Simulate Mobile Devices with Device Mode in Google Chrome][dte]
 
 [dte]: https://developers.google.com/web/tools/chrome-devtools/device-mode/
-<p data-visibility='hidden'>View <a href='https://learn.co/lessons/media-queries' title='Media Queries'>Media Queries</a> on Learn.co and start learning to code for free.</p>
