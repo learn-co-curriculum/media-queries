@@ -19,7 +19,7 @@ ensure your site looks great on all devices.
 Media queries are a feature of CSS. They are sets of styles that are applied
 when the medium satisfies specific conditions. Media queries most frequently
 decide whether a group of CSS rules applies based on the device "viewport" (or,
-"screen") size.  The points at which the layout adjusts, based on some media
+"screen") size. The points at which the layout adjusts, based on some media
 property (or properties!), is called a "breakpoint".
 
 ## What is the Media Query Syntax?
@@ -53,9 +53,9 @@ Below are more specific and complete examples of the media query syntax:
 }
 ```
 
-When defining a media query, we use the `@media` keyword followed by
-conditional statements that will trigger the media query to apply or not. Below
-we will break down each property available in media queries:
+When defining a media query, we use the `@media` keyword followed by conditional
+statements that will trigger the media query to apply or not. Below we will
+break down each property available in media queries:
 
 #### `not`, `only`
 
@@ -84,10 +84,10 @@ you want a CSS rule to apply to all devices, but _not_ screens smaller than
 
 #### `mediatype`
 
-Currently, the only well-supported media types are: screen, print, or all
-(meaning all devices). Mobile, tablet, and desktop devices all fall within the
-_screen_ `mediatype`, while _print_ is used for displaying content in a 'print
-preview' mode. Most commonly we are concerned only with _screen_.
+There are three types of media types: `screen`, `print`, and `all`. Mobile,
+tablet, and desktop devices all fall within the _screen_ `mediatype`, while
+_print_ is used for displaying content in a 'print preview' mode. Most commonly
+we are concerned only with _screen_.
 
 ```css
 @media [screen|print|all] and (max-width: 992px) {
@@ -146,7 +146,7 @@ paragraph's text from red to green when the screen size falls below `800px`:
 ```css
 /* initial style */
 p {
-    color: red;
+  color: red;
 }
 
 /* media query */
@@ -205,9 +205,9 @@ p {
 
 /* media query */
 @media only screen and (min-width: 400px) and (max-width: 800px) {
-   p {
-     color: green;
-   }
+  p {
+    color: green;
+  }
 }
 ```
 
@@ -230,21 +230,21 @@ just the popular ones.
 
 Advanced layout techniques, such as grid (which will be covered in later
 lessons), allow us to keep media query break points to a minimum. You can, for
-instance, set a media query for `max-width: 414px`, the width of the iPhone 6+,
-which will affect basically all mobile phones, but allow CSS grid to
-dynamically adjust the width of web page elements for smaller phones.
+instance, set a media query for `max-width: 390px`, the width of the iPhone 14,
+which will affect basically all mobile phones, but allow CSS grid to dynamically
+adjust the width of web page elements for smaller phones.
 
 ## Conclusion
 
-CSS Media Queries provide us a way to alter our CSS at specific screen
-sizes by setting _breakpoints_ at different screen widths. Using the
-`max-width` condition expressions to trigger styles below  a certain
-size and the `min-width` condition expressions to trigger styles above
-a certain size can help you build powerful, flexible interfaces for various
-screen sizes and devices. Instead of trying to target specific device sizes,
-use the in-browser dev tools for experimentation, and allow your unique content
-to determine at which sizes to write media query break points. Write media
-queries as you need them at whatever size your content starts to become unsightly.
+CSS Media Queries provide us a way to alter our CSS at specific screen sizes by
+setting _breakpoints_ at different screen widths. Using the `max-width`
+condition expressions to trigger styles below a certain size and the `min-width`
+condition expressions to trigger styles above a certain size can help you build
+powerful, flexible interfaces for various screen sizes and devices. Instead of
+trying to target specific device sizes, use the in-browser dev tools for
+experimentation, and allow your unique content to determine at which sizes to
+write media query break points. Write media queries as you need them at whatever
+size your content starts to become unsightly.
 
 ## Resources
 
